@@ -60,6 +60,4 @@ jobs:
       - name: Push Docker Image
         run: |
           docker push ${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/react-app/react-app:${{ env.IMAGE_TAG }}
-
-      - name: Output Image Tag
-        run: echo "Pushed Image Tag: ${{ env.IMAGE_TAG }}"
+          
