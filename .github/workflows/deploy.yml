@@ -41,9 +41,9 @@ jobs:
         run: |
           gcloud auth configure-docker ${{ secrets.GAR_LOCATION }}-docker.pkg.dev
 
-          - name: Retrieve Latest Version Tag
-          id: get-latest-version
-          run: |
+      - name: Retrieve Latest Version Tag
+        id: get-latest-version
+        run: |
             IMAGE_TAG=$(gcloud artifacts docker images list ${{ secrets.GAR_LOCATION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/repo/react-app \
             --format="value(tags)" | tr ',' '\n' | grep -Eo 'v[0-9]+' | sort -V | tail -n 1)
             
