@@ -39,7 +39,7 @@ const OpXFlow = () => {
             <li><strong>Front End Development : </strong> Srikar & Manasa</li>
             <li><strong>Docker Image Building : </strong> Navateja & Uday</li>
             <li><strong>CI/CD Pipeline : </strong> Chiranjeevi</li>
-            <li><strong>Infrastructure : </strong> Sirish , Sudhakar, Bharath & Chiranjeevi </li>
+            <li><strong>Infrastructure : </strong> Sirish , Sudhakar & Bharath</li>
             <li><strong>Kubernetes : </strong> Santhosh , Srikar, Manasa & Chiranjeevi </li>
           </ul>
         </div>
